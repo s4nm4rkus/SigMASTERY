@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SigMASTERY | Home</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/753458f954.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <table>
+      <th>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+      </th>
+
+      <th>
+        <a class="homeNav - active" href="home.html">HOME</a>
+        <a class="definition" href="definition.html">INTRODUCTION</a>
+        <a class="history" href="steps.html">STEPS</a>
+        <a class="lesson" href="lesson.html">LESSON</a>
+        <a class="exercise" href="exercise.html">EXERCISE</a>
+        <a href="#calculator" onclick="showCalculator()">CALCULATOR</a>
+        <a class="takequiz" href="https://forms.gle/apGFw3z3fJem5XBM9" target="_blank">Take Quiz <img class="arrowrightNav" src="icons/arrowright.png"> </a>
+      </th>
+    </table>
+
+
+  </div>
+
+  <div id="overlay" onclick="hideCalculator()"></div>
+  <table class="welcome-tbl">
+    <th>
+      <div class="welcome-con">
+        <p class="welcome">Welcome to</p>
+        <p class="title">SigMASTERY</p>
+        <p class="wc">
+          Dive into Sigma Notation to simplify and better understand math series effortlessly.
+        </p>
+      </div>
+    </th>
+    <th>
+      <img class="sigmasymbol" src="images/sigmasymbol2.png" alt="Description of the image">
+    </th>
+  </table>
+
+  <div class="introduction-container">
+    <div class="carousel-container hidden - overflow">
+      <div class="carousel-item">
+        <table>
+          <th class="item1">
+
+            <div class="what">
+              <p class="whatis">What is
+                Sigma Notation?</p>
+          </th>
+
+          <th>
+            <p class="whatDesc">
+              Sigma notation is a mathematical notation used to represent the sum of a series of numbers.
+              It is denoted by the Greek letter sigma (Σ), which stands for ‘sum.’
+            </p>
+            <a href="definition.html"><button class="learnButton2">Continue reading <img class="arrowright" src="icons/arrowright1.png"></button></a>
+      </div>
+      </th>
+      </table>
+    </div>
+
+    <!-- Second Item -->
+    <div class="carousel-item">
+      <table>
+        <th class="item1">
+
+          <div class="what">
+            <p class="whatis2">History of Sigma Notation</p>
+        </th>
+
+        <th>
+          <p class="whatDesc">
+            Sigma notation was denoted by the Greek letter Σ, was introduced by Swiss mathematician Leonhard Euler in the 18th century.
+            Euler developed this notation to succinctly represent sums of mathematical series.
+            The symbol Σ represents the phrase “sum of,” and it allows mathematicians to express series concisely.
+          </p>
+          <a href="definition.html"><button class="learnButton3">Read more <img class="arrowright" src="icons/arrowright1.png"></button></a>
+    </div>
+    </th>
+    </table>
+  </div>
+
+  <div class="carousel-item">
+    <table>
+      <th class="item1">
+
+        <div class="what">
+          <p class="whatis3">Sigma Notation: Steps</p>
+      </th>
+
+      <th>
+        <p class="whatDesc">
+          Sigma notation is a mathematical notation used to represent the sum of a series of numbers.
+          It is denoted by the Greek letter sigma (Σ), which stands for ‘sum.’
+        </p>
+        <a href="steps.html"><button class="learnButton4">Step 1 <img class="arrowright" src="icons/arrowright1.png"></button></a>
+  </div>
+  </th>
+  </table>
+</div>
+  </div>
+  <div class="dot-indicators"></div>
+  </div>
+
+  <p class="features">
+    Features
+  </p>
+
+  <table class="cards">
+    <th>
+      <div class="learnCard">
+        <img class="learn_img" src="images/solution2.png" />
+        <p class="learnT">LEARN</p>
+        <p class="learnDesc">
+          Unlock the power of sigma notation with SigMastery!
+          Dive into engaging lessons and gain insights into sigma, including its definition, history, and step-by-step solving methods.
+          Explore the world of sigma notation with SigMastery and elevate your learning experience!
+        </p>
+
+      </div>
+    </th>
+
+    <th>
+      <div class="solveCard">
+        <img class="learn_img" src="images/calculating.png" />
+        <p class="solveT">SOLVE</p>
+        <p class="learnDesc">
+          Take your sigma notation-solving skills to the next level with the SigMastery Calculator.
+          Effortlessly tackle complex sigma expressions and enhance your mathematical prowess.
+          Empower your learning journey with SigMastery – where calculation meets mastery!
+        </p>
+
+      </div>
+    </th>
+
+    <th>
+      <div class="takequizCard">
+        <img class="quiz_img" src="images/quiz.png" />
+        <p class="takeQ">TAKE QUIZ</p>
+        <p class="learnDesc">
+          Sharpen your knowledge through engaging quizzes with SigMastery.
+          Practice and reinforce your understanding of sigma notation with our thoughtfully crafted quizzes.
+          Elevate your learning experience and master sigma notation effortlessly with SigMastery Quizzes!
+        </p>
+
+      </div>
+    </th>
+
+  </table>
+
+  <div class="calculator-container" id="calculatorContainer">
+    <div class="calculator">
+      <h2 class=calcutitle>Σ Calculator</h2>
+      <label for="start">Start index:</label>
+      <input type="number" id="start" required>
+      <br>
+      <label for="end">End index:</label>
+      <input class="endinput" type="number" id="end" required>
+      <br>
+      <label for="expression">Enter mathematical expression:</label>
+      <input type="text" id="expression" placeholder="e.g., i^2" required>
+      <button class="calculate" onclick="calculate()">Solve</button>
+      <br>
+      <p id="sigmaNotation"> = </p>
+
+      <h3 class="answer" id="result"> = </h3>
+    </div>
+  </div>
+
+
+<footer>
+  <div class="footer-container">
+    <p>
+      ©2024 SigMastery
+    </p>
+  </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.3.0/math.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

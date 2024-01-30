@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SigMASTERY | Introduction</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/753458f954.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <table>
+      <th>
+        <img class="logo" src="images/logo.png" alt="Logo">
+      </th>
+
+      <th>
+        <a class="homeNav" href="home.html">HOME</a>
+        <a class="definition - active" href="definition.html">INTRODUCTION</a>
+        <a class="history" href="steps.html">STEPS</a>
+        <a class="lesson" href="lesson.html">LESSON</a>
+        <a class="exercise" href="exercise.html">EXERCISE</a>
+        <a href="#calculator" onclick="showCalculator()">CALCULATOR</a>
+        <a class="takequiz" href="https://forms.gle/apGFw3z3fJem5XBM9" target="_blank">Take Quiz <img class="arrowrightNav" src="icons/arrowright.png"> </a>
+      </th>
+
+    </table>
+  </div>
+<div id="overlay" onclick="hideCalculator()"></div>
+  <div class="white-background-div">
+    <table>
+      <th>
+        <img class="sigmaicon" src="icons/sigma.png" />
+      </th>
+
+      <th>
+
+        <p class="intro">SIGMA NOTATION</p>
+        <br />
+        <p class="intro-content">
+          When it comes to mathematics, there are several ways to represent a series or sum of numbers.
+          One of the most commonly used notations for this purpose is called <b class="sigmanot">Sigma notation</b>, also known as <b class="sigmanot">summation notation</b>.
+          It provides a concise and compact way to express a series of numbers, making it easier to work with and understand.
+          In this article, we will introduce you to the basics of Sigma notation, its uses, and how to interpret and manipulate it.
+        </p>
+      </th>
+
+  </table>
+
+    <img class="sigmaicon-desc" src="icons/sigmanotation-desc.png" />
+
+  <hr />
+
+  <table>
+    <th>
+      <img class="sigmaicon2" src="icons/leonard.png" />
+    </th>
+
+    <th>
+      <p class="intro4">History of Sigma Notation</p>
+      <br />
+      <p class="intro-content-2">
+        The history of Sigma notation, it was denoted by the <b class="sigmanot2"> Greek letter Σ </b>, was introduced by Swiss mathematician <b class="sigmanot2"> Leonhard Euler </b> in the 18th century.
+        Euler developed this notation to succinctly represent sums of mathematical series.
+        The symbol<b class="sigmanot2"> Σ </b> represents the phrase “sum of,” and it allows mathematicians to express series concisely.
+      </p>
+    </th>
+
+    </table>
+    <p class="intro-content-3">
+    Euler’s sigma notation gained popularity, and over time, it became a standard and widely adopted convention in mathematics.
+    It simplifies the representation of arithmetic and geometric series, making mathematical expressions more compact and readable.
+    </p>
+
+    <hr />
+
+    <table>
+      <th>
+        <p class="intro2">What is Sigma Notation?</p>
+        <br />
+        <p class="intro-content-2">
+          Sigma notation is a mathematical notation used to represent the sum of a series of numbers.
+          It is denoted by the <b class="sigmanot3">Greek letter sigma (Σ)</b>, which stands for ‘<b class="sigmanot3">sum</b>.’
+          The numbers to be summed are written below the sigma symbol, with a variable or index on the right-hand side that represents the number of terms in the series.
+          This variable takes on different values as the series is evaluated.
+        </p>
+      </th>
+      <th>
+        <img class="sigmaicon3" src="images/question2.png" />
+      </th>
+      </table>
+      <p class="intro-content-3">
+      For example, the series 1 + 2 + 3 + 4 + 5 can be written in Sigma notation as <b class="sigmanot3">Σn</b>, where n represents the number of terms in the series.
+      In this case, n takes on values from 1 to 5, and the notation can be read as ’the sum of n from 1 to 5.’
+      This is equivalent to writing the series as 1 + 2 + 3 + 4 + 5, which is more concise and easier to work with.
+      </p>
+    </div>
+
+
+  <div class="calculator-container" id="calculatorContainer">
+    <div class="calculator">
+      <h2 class=calcutitle>Σ Calculator</h2>
+      <label for="start">Start index:</label>
+      <input type="number" id="start" required>
+      <br>
+      <label for="end">End index:</label>
+      <input class="endinput" type="number" id="end" required>
+      <br>
+      <label for="expression">Enter mathematical expression:</label>
+      <input type="text" id="expression" placeholder="e.g., i^2" required>
+      <button class="calculate" onclick="calculate()">Solve</button>
+      <br>
+      <p id="sigmaNotation"> = </p>
+
+      <h3 class="answer" id="result"> = </h3>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <p>
+        ©2024 SigMastery
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.3.0/math.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

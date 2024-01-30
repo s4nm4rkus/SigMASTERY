@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SigMASTERY | Introduction</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/753458f954.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <table>
+      <th>
+        <img class="logo" src="images/logo.png" alt="Logo">
+      </th>
+
+      <th>
+        <a class="homeNav" href="home.html">HOME</a>
+        <a class="definition" href="definition.html">INTRODUCTION</a>
+        <a class="history" href="steps.html">STEPS</a>
+        <a class="lesson - active" href="lesson.html">LESSON</a>
+        <a class="exercise  " href="exercise.html">EXERCISE</a>
+        <a href="#calculator" onclick="showCalculator()">CALCULATOR</a>
+        <a class="takequiz" href="https://forms.gle/apGFw3z3fJem5XBM9" target="_blank">Take Quiz <img class="arrowrightNav" src="icons/arrowright.png"> </a>
+      </th>
+
+    </table>
+  </div>
+  <div id="overlay" onclick="hideCalculator()"></div>
+  <div class="white-background-div-lesson">
+    <table>
+      <th>
+        <img class="sigmaiconII" src="icons/sigma.png" />
+      </th>
+
+      <th>
+
+        <p class="intro">LESSON</p>
+        <br />
+        <p class="intro-content">
+          Play the video lesson and learn about Sigma Notation.
+        </p>
+      </th>
+    </table>
+
+    <table>
+      <th>
+        <iframe width="640" height="360" controls
+          src="https://www.youtube.com/embed/RcNw_h4j-dQ?si=uAw-Z95HVykHkD98" frameborder="0" allowfullscreen>
+        </iframe>
+      </th>
+    </table>
+
+
+  </div>
+
+
+  <div class="calculator-container" id="calculatorContainer">
+    <div class="calculator">
+      <h2 class=calcutitle>Σ Calculator</h2>
+      <label for="start">Start index:</label>
+      <input type="number" id="start" required>
+      <br>
+      <label for="end">End index:</label>
+      <input class="endinput" type="number" id="end" required>
+      <br>
+      <label for="expression">Enter mathematical expression:</label>
+      <input type="text" id="expression" placeholder="e.g., i^2" required>
+      <button class="calculate" onclick="calculate()">Solve</button>
+      <br>
+      <p id="sigmaNotation"> = </p>
+
+      <h3 class="answer" id="result"> = </h3>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <p>
+        ©2024 SigMastery
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.3.0/math.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

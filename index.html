@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SigMASTERY</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/753458f954.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="overlay"></div>
+  <table class="welcome-tbl">
+    <th>
+      <div class="welcome-con">
+        <p class="welcome">Welcome to</p>
+        <p class="title">SigMASTERY</p>
+        <p class="wc">
+          Dive into Sigma Notation to simplify and better understand math series effortlessly.
+        </p>
+        <table>
+          <th>
+            <button class="calcubtn" onclick="showCalculator()"> Calculator</button>
+          </th>
+          <th>
+            <a href="home.html"><button class="learnButton">Learn Now <img class="arrowright" src="icons/arrowright.png"></button></a>
+          </th>
+        </table>
+      </div>
+    </th>
+    <th>
+      <img class="sigmasymbol" src="images/sigmasymbol2.png" alt="Description of the image">
+    </th>
+  </table>
+
+  <div class="calculator-container" id="calculatorContainer">
+    <div class="calculator">
+      <h2 class=calcutitle>Σ Calculator</h2>
+      <label for="start">Start index:</label>
+      <input type="number" id="start" required>
+      <br>
+      <label for="end">End index:</label>
+      <input class="endinput" type="number" id="end" required>
+      <br>
+      <label for="expression">Enter mathematical expression:</label>
+      <input type="text" id="expression" placeholder="e.g., i^2" required>
+      <button class="calculate" onclick="calculate()">Solve</button>
+      <br>
+      <p id="sigmaNotation"> = </p>
+
+      <h3 class="answer" id="result"> = </h3>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.3.0/math.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

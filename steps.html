@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SigMASTERY | Steps</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/753458f954.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <table>
+      <th>
+        <img class="logo" src="images/logo.png" alt="Logo">
+      </th>
+
+      <th>
+        <a class="homeNav" href="home.html">HOME</a>
+        <a class="definition" href="definition.html">INTRODUCTION</a>
+        <a class="history - active" href="#history">STEPS</a>
+        <a class="lesson" href="lesson.html">LESSON</a>
+        <a class="exercise" href="exercise.html">EXERCISE</a>
+        <a href="#calculator" onclick="showCalculator()">CALCULATOR</a>
+        <a class="takequiz" href="https://forms.gle/apGFw3z3fJem5XBM9" target="_blank">Take Quiz <img class="arrowrightNav" src="icons/arrowright.png"> </a>
+      </th>
+
+    </table>
+  </div>
+<div id="overlay" onclick="hideCalculator()"></div>
+  <div class="white-background-div2">
+    <table>
+      <th>
+        <p class="introstep">STEP BY STEP OF SIGMA NOTATION</p>
+        <br />
+        <p class="intro-contentsteps">
+          This means we are summing up the terms a_iai for ii starting from 1 up to nn.
+          Here's a step-by-step guide on how to compute sigma notation:
+        </p>
+      </th>
+
+      <th>
+        <img class="sigmaicon" src="icons/sigma.png" />
+      </th>
+
+    </table>
+    <table>
+      <th>
+        <img class="sigmaicon_Num1" src="icons/1.png" />
+      </th>
+
+      <th>
+        <p class="introstep_sub">Understand the Range:</p>
+        <br />
+      </th>
+    </table>
+    <p class="intro-content-step1"> - Identify the lower limit (i = i= something) and upper limit (i = i= something) of the sigma notation.
+      This defines the range over which the terms are being summed.</p>
+
+    <table>
+      <th>
+        <img class="sigmaicon_Num1" src="icons/2.png" />
+      </th>
+
+      <th>
+        <p class="introstep_sub">Write Out the Terms:</p>
+        <br />
+      </th>
+    </table>
+    <p class="intro-content-step1"> - Write out the terms a_iai for each value of ii in the specified range.
+      This helps you see the pattern and understand what is being summed.</p>
+
+    <table>
+      <th>
+        <img class="sigmaicon_Num1" src="icons/3.png" />
+      </th>
+
+      <th>
+        <p class="introstep_sub">Calculate Each Term:</p>
+        <br />
+      </th>
+    </table>
+    <p class="intro-content-step1"> - If the terms a_iai are given explicitly, substitute the values of ii into the expression to find each term.
+      If the terms follow a pattern, make sure you understand the pattern.</p>
+
+    <table>
+      <th>
+        <img class="sigmaicon_Num1" src="icons/4.png" />
+      </th>
+
+      <th>
+        <p class="introstep_sub">Sum the Terms:</p>
+        <br />
+      </th>
+    </table>
+    <p class="intro-content-step1"> -Add up all the terms obtained in step 3 to find the overall sum.
+      This is the result of the sigma notation.</p>
+    <hr />
+    <p class="introstep_subex">Let's go through an example to illustrate the process:</p>
+    <img class="eg1" src="icons/eg1.png" />
+    <p class="introstep_subex2">1. Understand the Range:</p>
+    <p class="introstep_subex3">- The range is from <b>i = 1</b> to <b>i = 4</b>.</p>
+    <p class="introstep_subex2">2. Write Out the Terms:</p>
+    <img class="eg2" src="icons/eg2.png" />
+    <p class="introstep_subex2">3. Calculate Each Term:</p>
+    <p class="introstep_subex3">- The terms are already calculated in the previous step.</p>
+    <p class="introstep_subex2">4. Sum the Term:</p>
+    <p class="introstep_subex3"><b>= 1 + 3 + 5 + 7 = 16</b></p>
+    <p class="introstep_subex2">Therefore </p>
+    <img class="eg1" src="icons/eg1ans.png" />
+    <hr />
+    <table>
+      <p class="introstep_subex2">Example: </p>
+      <th>
+          <p class="introstep_subexample1">Evaluate</p>
+      </th>
+      <th>
+        <img class="ex1" src="icons/ex1.png" />
+      </th>
+    </table>
+    <p class="introstep_subex2">Solution </p>
+    <p class="introstep_subex3">This is the sum of all the <b>r = 1</b> to <b>4 = 4</b> .
+      So we take each value of r, work out <b>r^3</b> in each case, and add the results. Therefore</p>
+    <img class="exa1" src="icons/ex1sol.png" />
+
+    <hr>
+
+    <table>
+      <p class="introstep_subex2">Example: </p>
+      <th>
+          <p class="introstep_subexample1">Evaluate</p>
+      </th>
+      <th>
+        <img class="ex1" src="icons/ex2.png" />
+      </th>
+    </table>
+    <p class="introstep_subex2">Solution </p>
+    <p class="introstep_subex3">In this example we have to used the letter <b>n</b> to represent the variable in the sum, rather than r.
+    Any letter can be used, and we find the answer in the same way as before.</p>
+    <img class="exa1" src="icons/ex2sol.png" />
+
+    <hr>
+
+    <table>
+      <p class="introstep_subex2">Example: </p>
+      <th>
+          <p class="introstep_subexample1">Evaluate</p>
+      </th>
+      <th>
+        <img class="ex1" src="icons/ex3.png" />
+      </th>
+    </table>
+    <p class="introstep_subex2">Solution </p>
+    <p class="introstep_subex3">You might recognize that each number 1/2r (r + 1) is a triangular number, and so this example asks
+    for the sum of the six triangular numbers. We get</p>
+    <img class="exa1last" src="icons/ex3sol.png" />
+  </div>
+
+
+  <div class="calculator-container" id="calculatorContainer">
+    <div class="calculator">
+      <h2 class=calcutitle>Σ Calculator</h2>
+      <label for="start">Start index:</label>
+      <input type="number" id="start" required>
+      <br>
+      <label for="end">End index:</label>
+      <input class="endinput" type="number" id="end" required>
+      <br>
+      <label for="expression">Enter mathematical expression:</label>
+      <input type="text" id="expression" placeholder="e.g., i^2" required>
+      <button class="calculate" onclick="calculate()">Solve</button>
+      <br>
+      <p id="sigmaNotation"> = </p>
+
+      <h3 class="answer" id="result"> = </h3>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <p>
+        ©2024 SigMastery
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.3.0/math.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
